@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const connectionString = "postgresql://postgres.bzuscjyhoqdfljpfcsyv:zFNcnFphBtGW8lJR@aws-0-ap-south-1.pooler.supabase.com:6543/postgres";
+const connectionString = process.env.DATABASE_STRING;
 
 
 const pool = new Pool({
